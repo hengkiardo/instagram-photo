@@ -24,8 +24,7 @@ router.get('/', function (req, res) {
     })
     .then(function (image) {
       res.render('index', {
-        image: image[0].images.standard_resolution.url,
-        access_token: req.cookies.instaToken
+        image: image[0].images.standard_resolution.url
       });
     })
     .catch(function (errors) {
