@@ -62,7 +62,7 @@ router.get('/handleauth', function (req, res) {
 
 
 /* Create Photo and Send to Lob */
-router.post('/send-postcard', function (req, res) {
+router.post('/send-photo', function (req, res) {
 
   var photoTemplate = fs.readFileSync(__dirname + '/photo.html').toString();
   return Lob.addresses.create({
