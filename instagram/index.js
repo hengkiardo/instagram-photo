@@ -56,7 +56,7 @@ router.get('/handleauth', function (req, res) {
     res.redirect('/');
   })
   .catch(function (errors) {
-    console.log(err.body);
+    console.log(errors);
   });
 });
 
